@@ -18,3 +18,8 @@ Avant de pouvoir exécuter ce projet, vous devez vous assurer d'avoir installé 
 
    ```bash
    git clone https://github.com/VotreNomUtilisateur/gestion-patients-spring-mvc.git
+
+
+![Capture d'écran 2025-03-22 231409](https://github.com/user-attachments/assets/48dacaed-ea9a-4be1-bbf0-194ea9892668)
+![Capture d'écran 2025-03-22 231612](https://github.com/user-attachments/assets/80ef3fe3-3dc1-4c1b-95c4-83624c0e036b)
+![Capture d'écran 2025-03-23 155138](https://github.com/user-attachments/assets/3fea71b6-02ca-4b66-8a5a-bc9b8e44c59a)
