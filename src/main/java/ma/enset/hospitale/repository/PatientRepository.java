@@ -15,4 +15,8 @@ public interface PatientRepository extends JpaRepository<Patient, Long> {
     // Méthode personnalisée avec une requête JPQL
     @Query("select p from Patient p where p.nom like :x")
     Page<Patient> chercher(@Param("x") String keyword, Pageable pageable);
+
+
+
 }
+
