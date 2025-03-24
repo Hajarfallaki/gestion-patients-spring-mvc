@@ -38,3 +38,22 @@ Cette capture d'écran affiche les résultats d'une requête SQL sur la table `p
 ![Capture d'écran 2025-03-23 155138](https://github.com/user-attachments/assets/3fea71b6-02ca-4b66-8a5a-bc9b8e44c59a)
 
 Cette capture d'écran montre l'exécution d'une requête SQL dans l'interface H2, avec les détails des patients récupérés depuis la base de données.
+
+
+![image](https://github.com/user-attachments/assets/ed5fb387-67a5-4811-84e0-e3541368c3e8)
+Cette capture d'écran affiche une liste de patients extraite d'une base de données ou d'une application de gestion des patients. Le tableau présente les informations suivantes pour chaque patient :
+
+ID : L'identifiant unique du patient.
+
+Nom : Le nom du patient.
+
+Date : La date associée à l'enregistrement du patient (probablement la date de création ou de mise à jour).
+
+Malade : Un indicateur booléen (false dans ce cas) qui montre si le patient est malade ou non.
+
+Score : Un score associé au patient (ici, tous les patients ont un score de 100).
+
+Les patients listés sont Anas, Lina, et Hajar, avec des enregistrements multiples pour certains noms. En bas de la capture d'écran, une pagination est visible, permettant de naviguer entre les pages de résultats (numéros 1 à 28).
+
+Cette vue illustre la fonctionnalité de consultation et de gestion des données des patients dans l'application, avec la possibilité de parcourir les enregistrements via la pagination.
+
