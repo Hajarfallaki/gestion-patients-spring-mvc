@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" layout:decorate="template1"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+
+>
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -8,13 +12,16 @@
     <link rel="stylesheet" href="/webjars/bootstrap-icons/1.11.3/font/bootstrap-icons.css">
 </head>
 <body>
-<div class="p-3">
+<div layout:fragment="content1">
+<div class="container mt-2">
+
     <div class="card">
         <div class="card-header">Liste Patients </div>
         <div class="card-body">
             <form method="get" th:action="@{index}">
-                <label>Keyword:</label>
-                <input  type="text" name="keyword" th:value="${keyword}">
+                <label for="keyword">Keyword:</label>
+                <input id="keyword" type="text" name="keyword" th:value="${keyword}">
+
                 <button type="submit" class="btn btn-info">
                     <i class="bi bi-search"></i>
                 </button>
@@ -55,6 +62,7 @@
 
     </div>
 
+</div>
 </div>
 
 
