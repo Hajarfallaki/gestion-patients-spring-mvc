@@ -104,8 +104,7 @@ Champ de recherche par mot-clé (keyword)
 
 
 
-
-## Ajout d'un noveau patient ( edit )
+### Ajout d'un noveau patient ( edit )
 ![image](https://github.com/user-attachments/assets/8bd7e5a6-1ab1-495c-88ed-a38950b8e635)
 
 
