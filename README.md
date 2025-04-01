@@ -50,3 +50,29 @@ Cette capture d'écran montre l'exécution d'une requête SQL dans l'interface H
 ### Liste des patients
 ![image](https://github.com/user-attachments/assets/ed5fb387-67a5-4811-84e0-e3541368c3e8)
 Cette capture d'écran montre une liste de patients extraite de la base de données. Le tableau affiche des informations telles que l'**ID**, le **nom**, la **date**, le **statut de maladie**, et le **score** de chaque patient. Une pagination en bas permet de naviguer entre les pages de résultats.
+
+
+### Part2:
+
+**1. Interface Utilisateur:**
+
+- Menu de navigation noir en haut avec liens "Home" et "Patients"
+
+- Affichage du nom d'utilisateur connecté
+
+- Tableau listant tous les patients avec leurs informations
+
+**2. Gestion des Patients:**
+
+- Affichage des données patients (ID, Nom, Date, Statut Malade, Score)
+
+- Bouton "Edit" pour chaque patient permettant la modification
+
+- Système de pagination complet (53 pages dans l'exemple)
+
+**3. Recherche:**
+
+Champ de recherche par mot-clé (keyword)
+
+
+![Capture d'écran 2025-04-01 184950](https://github.com/user-attachments/assets/b56409fa-104b-4cca-b8ea-987941598c26)
