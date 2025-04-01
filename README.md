@@ -29,8 +29,6 @@ Avant de pouvoir exécuter ce projet, vous devez vous assurer d'avoir installé 
 
 # Partie 1:
 
-## Captures d'écran
-
 ### Connexion à la base de données H2
 
 ![Capture d'écran 2025-03-22 231409](https://github.com/user-attachments/assets/48dacaed-ea9a-4be1-bbf0-194ea9892668)
@@ -109,3 +107,5 @@ Champ de recherche par mot-clé (keyword)
 
 ## Ajout d'un noveau patient ( edit )
 ![image](https://github.com/user-attachments/assets/8bd7e5a6-1ab1-495c-88ed-a38950b8e635)
+
+
