@@ -77,3 +77,22 @@ Champ de recherche par mot-clé (keyword)
 
 
 ![Capture d'écran 2025-04-01 184950](https://github.com/user-attachments/assets/b56409fa-104b-4cca-b8ea-987941598c26)
+
+
+## Mode d'Utilisation
+
+1. **Ajouter un patient** :
+   - Cliquer sur le bouton "Nouveau Patient"
+   - Remplir les détails du patient
+   - Soumettre le formulaire
+
+2. **Rechercher des patients** :
+   - Entrer un mot-clé dans le champ de recherche
+   - Cliquer sur le bouton "Chercher"
+   - Consulter les résultats filtrés
+
+3. **Voir tous les patients** :
+   - Laisser le champ de recherche vide
+   - Cliquer sur "Chercher" pour voir la liste complète
+  
+     ![Capture d'écran 2025-04-01 184956](https://github.com/user-attachments/assets/dc3d9a80-839a-439a-a1a8-845385686988)
