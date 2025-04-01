@@ -27,7 +27,8 @@ Avant de pouvoir exécuter ce projet, vous devez vous assurer d'avoir installé 
    ```bash
    git clone https://github.com/VotreNomUtilisateur/gestion-patients-spring-mvc.git
 
-## Partie 1:
+# Partie 1:
+
 ## Captures d'écran
 
 ### Connexion à la base de données H2
@@ -52,10 +53,14 @@ Cette capture d'écran montre l'exécution d'une requête SQL dans l'interface H
 ![image](https://github.com/user-attachments/assets/ed5fb387-67a5-4811-84e0-e3541368c3e8)
 Cette capture d'écran montre une liste de patients extraite de la base de données. Le tableau affiche des informations telles que l'**ID**, le **nom**, la **date**, le **statut de maladie**, et le **score** de chaque patient. Une pagination en bas permet de naviguer entre les pages de résultats.
 
+### Supprimer patients
+![image](https://github.com/user-attachments/assets/8a9de3be-9919-4041-8ada-8a16b0041780)
 
 
 
-## Partie 2:
+
+
+# Partie 2:
 
 **1. Interface Utilisateur:**
 
