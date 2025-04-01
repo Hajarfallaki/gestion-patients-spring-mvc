@@ -53,6 +53,8 @@ Cette capture d'écran montre l'exécution d'une requête SQL dans l'interface H
 Cette capture d'écran montre une liste de patients extraite de la base de données. Le tableau affiche des informations telles que l'**ID**, le **nom**, la **date**, le **statut de maladie**, et le **score** de chaque patient. Une pagination en bas permet de naviguer entre les pages de résultats.
 
 
+
+
 ## Partie 2:
 
 **1. Interface Utilisateur:**
