@@ -111,22 +111,28 @@ Champ de recherche par mot-clé (keyword)
 # Partie 3:
 
  1 -  **InMemomy Authentication**
- 🔐 Sécurité avec Spring Security (In-Memory Authentication)
+ 
+ **🔐 Sécurité avec Spring Security (In-Memory Authentication)**
 Dans cette partie du projet, j’ai mis en place un système d’authentification simple basé sur Spring Security avec des utilisateurs définis en mémoire (InMemory Authentication).
 
-✅ Fichiers ajoutés :
-SecurityConfig.java : configuration de la sécurité (utilisateurs, rôles, protection des endpoints).
 
-HomeController.java : contrôleur pour gérer la navigation entre les pages (ex. : accueil, login).
+**✅ Fichiers ajoutés :**
 
-template1.html : page HTML modifiée pour s’adapter à la sécurité.
+   - SecurityConfig.java : configuration de la sécurité (utilisateurs, rôles, protection des endpoints).
 
-⚙️ Fonctionnalités ajoutées :
-Authentification des utilisateurs avec nom d’utilisateur et mot de passe définis dans le code.
+   - HomeController.java : contrôleur pour gérer la navigation entre les pages (ex. : accueil, login).
 
-Protection des routes : certaines pages nécessitent d’être authentifié.
+   - template1.html : page HTML modifiée pour s’adapter à la sécurité.
 
-Redirection automatique vers la page de login si l’utilisateur n’est pas connecté.
+**⚙️ Fonctionnalités ajoutées :**
+
+ - Authentification des utilisateurs avec nom d’utilisateur et mot de passe définis dans le code.
+
+ - Protection des routes : certaines pages nécessitent d’être authentifié.
+
+ - Redirection automatique vers la page de login si l’utilisateur n’est pas connecté.
+   
+
 ![image](https://github.com/user-attachments/assets/48832ca1-4cac-43df-9cfc-7a7b30a928ff)
 
 
