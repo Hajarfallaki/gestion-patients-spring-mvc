@@ -136,3 +136,9 @@ Dans cette partie du projet, j’ai mis en place un système d’authentificatio
 ![image](https://github.com/user-attachments/assets/48832ca1-4cac-43df-9cfc-7a7b30a928ff)
 
 
+## 👤 Utilisateurs définis :
+
+Nom d'utilisateur | Mot de passe | Rôle
+admin | 1234 | ADMIN
+user1 | 1111 | USER
+
