@@ -141,7 +141,7 @@ Dans cette partie du projet, j’ai mis en place un système d’authentificatio
 | Nom d'utilisateur | Mot de passe | Rôle  |
 |-------------------|--------------|-------|
 | admin             | 1234         | ADMIN |
-| user1             | 1111         | USER  |
+| user1             | 1234         | USER  |
 
 
 
