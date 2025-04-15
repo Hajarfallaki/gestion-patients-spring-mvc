@@ -112,11 +112,11 @@ Champ de recherche par mot-clé (keyword)
 
  1 -  **InMemomy Authentication**
  
- **🔐 Sécurité avec Spring Security (In-Memory Authentication)**
+ ## 🔐 Sécurité avec Spring Security (In-Memory Authentication)
 Dans cette partie du projet, j’ai mis en place un système d’authentification simple basé sur Spring Security avec des utilisateurs définis en mémoire (InMemory Authentication).
 
 
-**✅ Fichiers ajoutés :**
+## ✅ Fichiers ajoutés :
 
    - SecurityConfig.java : configuration de la sécurité (utilisateurs, rôles, protection des endpoints).
 
@@ -124,7 +124,7 @@ Dans cette partie du projet, j’ai mis en place un système d’authentificatio
 
    - template1.html : page HTML modifiée pour s’adapter à la sécurité.
 
-**⚙️ Fonctionnalités ajoutées :**
+## ⚙️ Fonctionnalités ajoutées :
 
  - Authentification des utilisateurs avec nom d’utilisateur et mot de passe définis dans le code.
 
