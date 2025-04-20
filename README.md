@@ -146,3 +146,6 @@ Dans cette partie du projet, j’ai mis en place un système d’authentificatio
 
 
 **💡 modifier les utilisateurs dans le fichier SecurityConfig.java**
+
+![Capture d'écran 2025-04-20 195144](https://github.com/user-attachments/assets/a6d649bb-5f1d-4e22-ae98-da630902bf6d)
+
