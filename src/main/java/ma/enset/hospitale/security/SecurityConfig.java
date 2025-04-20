@@ -21,7 +21,7 @@ public class SecurityConfig {
     }
 
     @Bean
-    public InMemoryUserDetailsManager inMemoryUserDetailsManager(PasswordEncoder passwordEncoder){
+    public InMemoryUserDetailsManager inMemoryUserDetailsManager(PasswordEncoder passwordEncoder) {
         String encodedPassword = passwordEncoder.encode("1234");
         System.out.println("Mot de passe encodé : " + encodedPassword);
         return new InMemoryUserDetailsManager(
@@ -34,7 +34,12 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
         return httpSecurity
-                .formLogin(Customizer.withDefaults())
+                .formLogin(form -> form
+                        .loginPage("/login")        // URL de la page login.html
+                        .defaultSuccessUrl("/", true) // Redirection après login réussi
+                        .permitAll()                // Laisser tout le monde accéder à cette page
+                )
+                .authorizeHttpRequests(ar -> ar.requestMatchers("/login").permitAll())
                 .authorizeHttpRequests(ar -> ar.requestMatchers("/deletePatient/**").hasRole("ADMIN"))
                 .authorizeHttpRequests(ar -> ar.requestMatchers("/admin/**").hasRole("ADMIN"))
                 .authorizeHttpRequests(ar -> ar.requestMatchers("/user/**").hasRole("USER"))

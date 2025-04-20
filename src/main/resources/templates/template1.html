@@ -1,9 +1,11 @@
-<!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org"
-      xmlns:layout="http://www.ultraq.net/thymeleaf/layout">
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net/thymeleaf/layout"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Hôpital - Tableau de bord</title>
 
     <link href="/webjars/bootstrap/5.2.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <script src="/webjars/bootstrap/5.2.3/js/bootstrap.bundle.js"></script>
@@ -11,48 +13,42 @@
 
 <body>
 
-<!-- A grey horizontal navbar that becomes vertical on small screens -->
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-
     <div class="container-fluid">
-        <!-- Links -->
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" th:href="@{index}">Home</a>
+                <a class="nav-link" th:href="@{/index}">Accueil</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link </a>
-            </li>
-
-
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Patients</a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" th:href="@{/formPatients}">Nouveau Patient</a></li>
-                    <li><a class="dropdown-item" th:href="@{index}">Chercher</a></li>
-
+                    <li><a class="dropdown-item" th:href="@{/index}">Chercher</a></li>
                 </ul>
             </li>
         </ul>
-        <ul  class="navbar-nav"  >
 
+        <!-- Affichage du nom d'utilisateur connecté et de son rôle -->
+        <ul class="navbar-nav ms-auto">
             <li class="nav-item dropdown">
-                <!--/*@thymesVar id="#authentication" type=""*/-->
-                <a class="nav-link dropdown-toggle" href="#" role="button"
-                   data-bs-toggle="dropdown"
-                   > [Username]
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    👤 <strong sec:authentication="name">Utilisateur</strong>
+                    (<span sec:authentication="authorities">Rôle</span>)
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" th:href="@{/formPatients}">Logout</a></li>
-
+                    <!-- Autres éléments du menu, si nécessaire -->
+                    <li>
+                        <form th:action="@{/logout}" method="post">
+                            <button type="submit" class="dropdown-item bg-transparent border-0">Se déconnecter</button>
+                        </form>
+                    </li>
                 </ul>
             </li>
         </ul>
-    </div>
 
+    </div>
 </nav>
 
-<!-- Thymeleaf fragment for content -->
 <section layout:fragment="content1"></section>
 
 </body>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Connexion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #3DB74E, #1E8449);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-container {
+            background-color: #ffffff;
+            padding: 50px 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            width: 100%;
+            max-width: 420px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .login-container h2 {
+            margin: 0 0 30px;
+            text-align: center;
+            color: #2C3E50;
+            font-weight: 600;
+            font-size: 28px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 500;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #3DB74E;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2fa342;
+        }
+
+        .message {
+            margin-top: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .error {
+            color: #e74c3c;
+        }
+
+        .logout {
+            color: #27ae60;
+        }
+
+        @media (max-width: 480px) {
+            .login-container {
+                padding: 35px 20px;
+                border-radius: 12px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="login-container">
+    <h2>Connexion</h2>
+    <form th:action="@{/login}" method="post">
+        <label for="username">Nom d'utilisateur</label>
+        <input type="text" name="username" id="username" required />
+
+        <label for="password">Mot de passe</label>
+        <input type="password" name="password" id="password" required />
+
+        <button type="submit">Se connecter</button>
+
+<!--        <div class="message" th:if="${param.error}">-->
+<!--            <p class="error">Nom d'utilisateur ou mot de passe invalide.</p>-->
+<!--        </div>-->
+        <div class="message" th:if="${param.logout}">
+            <p class="logout">Vous avez été déconnecté avec succès.</p>
+        </div>
+    </form>
+</div>
+</body>
+</html>
